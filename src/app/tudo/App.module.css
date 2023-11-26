@@ -1,0 +1,123 @@
+
+.primera_vez{
+    max-width: 900px;
+    margin: 40px auto;
+}
+.imagem_logo{
+    object-fit: cover;
+    width: 200px;
+    height: 30px;
+    margin:40px 0 ;
+}
+.form_div{
+    max-width: 900px;
+    
+}
+.inputs{ 
+    padding: 2px;
+    outline: none;
+    margin:20px 0 ;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 2px #227c9d solid;
+    
+}
+.butao{
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    background-color: #227c9d;
+    padding: 4px 0;
+    transition: all 0.7s ;
+}
+.butao:hover{
+    opacity:0.4
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0 50px;
+}
+.up{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 45px;
+
+}
+.pai{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    text-shadow: 2px 2px 4px black ;
+}
+.img{
+    object-fit: cover;
+    width: 45px;
+}
+.grida{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.pequeno{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.voltar{
+    left: -24px;
+    position: absolute;
+    background-color: #227c9d;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.obj{
+    object-fit: contain;
+    width: 75%;
+}
+.voltar:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width:1000px){
+    .primera_vez{
+        max-width: 600px;
+    }
+}
+@media screen and (max-width:650px){
+    .primera_vez{
+        max-width: 400px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:55px 0;
+    }
+    .pequeno{
+        width: 80%;
+    }
+    .meio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.butao:disabled{
+    opacity: 0.4;
+}
